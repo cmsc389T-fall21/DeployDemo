@@ -12,7 +12,6 @@ jobs:
           host: ${{ secrets.HOST }} 
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          port: 22
+          port:  ${{ secrets.PORT }}
           script: |
-              cd ../pub
               git clone git@github.com:nkrishnan19/DeployDemo.git
